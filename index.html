@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Novo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Karaokê</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#0a0a0f;color:#fff;font-family:sans-serif;padding:20px}
+  h1{text-align:center;font-size:2rem;background:linear-gradient(to right,#a855f7,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:24px}
+  input{width:100%;max-width:500px;display:block;margin:0 auto 24px;padding:10px 16px;border-radius:999px;border:1px solid #444;background:#1a1a2e;color:#fff;font-size:1rem;outline:none}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;max-width:1200px;margin:0 auto}
+  .card{background:#1a1a2e;border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .2s;border:1px solid #333}
+  .card:hover{transform:translateY(-4px);border-color:#a855f7}
+  .card img,.no-thumb{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#111;font-size:2rem;display:flex;align-items:center;justify-content:center}
+  .card p{padding:10px 12px;font-size:.85rem;color:#ccc}
+</style>
+</head>
+<body>
+<h1>🎤 Karaokê</h1>
+<input type="text" placeholder="Buscar música..." oninput="filtrar(this.value)" id="busca"/>
+<div class="grid" id="grid">
+      <div class="card" onclick="window.open('https://www.youtube.com/watch?v=nFpjkBHvAT4','_blank')">
+        <img src="https://img.youtube.com/vi/nFpjkBHvAT4/hqdefault.jpg" alt="Thiaguinho - Conquistando o Impossível (Karaokê)"/>
+        <p>Thiaguinho - Conquistando o Impossível (Karaokê)</p>
+      </div>
+      <div class="card" onclick="window.open('https://www.youtube.com/watch?v=5rFD-rVMrJg','_blank')">
+        <img src="https://img.youtube.com/vi/5rFD-rVMrJg/hqdefault.jpg" alt="Dilsinho - Recaída (Karaokê)"/>
+        <p>Dilsinho - Recaída (Karaokê)</p>
+      </div>
+      <div class="card" onclick="window.open('https://www.youtube.com/watch?v=6tJyIGFfkZA','_blank')">
+        <img src="https://img.youtube.com/vi/6tJyIGFfkZA/hqdefault.jpg" alt="Dilsinho - Basta Você Me Ligar (Karaokê)"/>
+        <p>Dilsinho - Basta Você Me Ligar (Karaokê)</p>
+      </div>
+      <div class="card" onclick="window.open('https://youtu.be/TujpUoqZdoE?si=QpULucr2tAgSAlbX','_blank')">
+        <img src="https://img.youtube.com/vi/TujpUoqZdoE/hqdefault.jpg" alt="thales"/>
+        <p>thales</p>
+      </div>
+      <div class="card" onclick="window.open('https://youtu.be/33VtV9Gnjyo?si=VuXapf1A3rGoA5OY','_blank')">
+        <img src="https://img.youtube.com/vi/33VtV9Gnjyo/hqdefault.jpg" alt="sorriso marato"/>
+        <p>sorriso marato</p>
+      </div>
+      <div class="card" onclick="window.open('https://www.youtube.com/watch?v=ePjtnSPFWK8','_blank')">
+        <img src="https://img.youtube.com/vi/ePjtnSPFWK8/hqdefault.jpg" alt="Evidências - Chitãozinho e Xororó (Karaokê)"/>
+        <p>Evidências - Chitãozinho e Xororó (Karaokê)</p>
+      </div>
+      <div class="card" onclick="window.open('https://www.youtube.com/watch?v=bo_efYhYU2A','_blank')">
+        <img src="https://img.youtube.com/vi/bo_efYhYU2A/hqdefault.jpg" alt="Shallow - Lady Gaga ft. Bradley Cooper (Karaokê)"/>
+        <p>Shallow - Lady Gaga ft. Bradley Cooper (Karaokê)</p>
+      </div>
+      <div class="card" onclick="window.open('https://www.youtube.com/watch?v=fJ9rUzIMcZQ','_blank')">
+        <img src="https://img.youtube.com/vi/fJ9rUzIMcZQ/hqdefault.jpg" alt="Bohemian Rhapsody - Queen (Karaokê)"/>
+        <p>Bohemian Rhapsody - Queen (Karaokê)</p>
+      </div></div>
+<script>
+  const todos = document.querySelectorAll('.card');
+  function filtrar(q){todos.forEach(c=>{c.style.display=c.querySelector('p').textContent.toLowerCase().includes(q.toLowerCase())?'':'none'});}
+</script>
+</body>
+</html>
+<script src="script.js"></script>
+</body>
+</html>
