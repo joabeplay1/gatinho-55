@@ -1,0 +1,272 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/components/game/RunnerGameOver.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=86705d17"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("/app/src/components/game/RunnerGameOver.jsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+import __vite__cjsImport3_react from "/node_modules/.vite/deps/react.js?v=86705d17"; const React = __vite__cjsImport3_react.__esModule ? __vite__cjsImport3_react.default : __vite__cjsImport3_react;
+import { motion } from "/node_modules/.vite/deps/framer-motion.js?v=86705d17";
+export default function RunnerGameOver({ score, distance, isNewRecord, isNewDistance, onRestart, onMenu, "data-collection-item-id": __dataCollectionItemId }) {
+  return /* @__PURE__ */ jsxDEV(
+    "div",
+    {
+      "data-source-location": "components/game/RunnerGameOver:6:4",
+      "data-dynamic-content": "true",
+      className: "min-h-screen flex items-center justify-center",
+      style: { background: "linear-gradient(160deg, #0a0a1a, #1a0520, #0a0a1a)" },
+      "data-collection-item-id": __dataCollectionItemId,
+      children: [
+        /* @__PURE__ */ jsxDEV("div", { "data-source-location": "components/game/RunnerGameOver:9:6", "data-dynamic-content": "true", className: "absolute inset-0 pointer-events-none overflow-hidden", children: /* @__PURE__ */ jsxDEV(
+          "div",
+          {
+            "data-source-location": "components/game/RunnerGameOver:10:8",
+            "data-dynamic-content": "true",
+            className: "absolute top-1/3 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full opacity-15",
+            style: { background: "radial-gradient(circle, #ff00ff, transparent)", filter: "blur(60px)" }
+          },
+          void 0,
+          false,
+          {
+            fileName: "/app/src/components/game/RunnerGameOver.jsx",
+            lineNumber: 29,
+            columnNumber: 9
+          },
+          this
+        ) }, void 0, false, {
+          fileName: "/app/src/components/game/RunnerGameOver.jsx",
+          lineNumber: 28,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ jsxDEV(
+          motion.div,
+          {
+            "data-source-location": "components/game/RunnerGameOver:14:6",
+            "data-dynamic-content": "true",
+            initial: { opacity: 0, scale: 0.7, y: 40 },
+            animate: { opacity: 1, scale: 1, y: 0 },
+            transition: { type: "spring", stiffness: 250, damping: 22 },
+            className: "relative flex flex-col items-center text-center gap-5 py-8 px-6 w-full max-w-sm mx-auto z-10",
+            children: [
+              /* @__PURE__ */ jsxDEV(
+                motion.div,
+                {
+                  "data-source-location": "components/game/RunnerGameOver:20:8",
+                  "data-dynamic-content": "true",
+                  animate: isNewRecord ? { rotate: [0, -15, 15, -15, 0], scale: [1, 1.1, 1] } : { y: [0, -8, 0] },
+                  transition: { repeat: Infinity, duration: isNewRecord ? 1.5 : 2 },
+                  className: "text-7xl",
+                  style: { filter: isNewRecord ? "drop-shadow(0 0 20px #ffd700)" : "drop-shadow(0 0 10px #ff4400)" },
+                  children: isNewRecord ? "🏆" : "💥"
+                },
+                void 0,
+                false,
+                {
+                  fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                  lineNumber: 39,
+                  columnNumber: 9
+                },
+                this
+              ),
+              /* @__PURE__ */ jsxDEV("div", { "data-source-location": "components/game/RunnerGameOver:28:8", "data-dynamic-content": "true", children: [
+                /* @__PURE__ */ jsxDEV(
+                  "h2",
+                  {
+                    "data-source-location": "components/game/RunnerGameOver:29:10",
+                    "data-dynamic-content": "true",
+                    className: "text-4xl font-display",
+                    style: { color: isNewRecord ? "#ffd700" : "#fff", textShadow: isNewRecord ? "0 0 20px #ffd700" : "0 0 15px #ff00ff" },
+                    children: isNewRecord ? "Novo Recorde!" : "Game Over!"
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                    lineNumber: 48,
+                    columnNumber: 11
+                  },
+                  this
+                ),
+                isNewRecord && /* @__PURE__ */ jsxDEV("p", { "data-source-location": "components/game/RunnerGameOver:34:12", "data-dynamic-content": "false", className: "text-yellow-400/80 font-body mt-1 text-sm", children: "Incrível! Você bateu o recorde!" }, void 0, false, {
+                  fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                  lineNumber: 53,
+                  columnNumber: 11
+                }, this)
+              ] }, void 0, true, {
+                fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                lineNumber: 47,
+                columnNumber: 9
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { "data-source-location": "components/game/RunnerGameOver:39:8", "data-dynamic-content": "true", className: "grid grid-cols-2 gap-3 w-full", children: [
+                /* @__PURE__ */ jsxDEV(
+                  "div",
+                  {
+                    "data-source-location": "components/game/RunnerGameOver:40:10",
+                    "data-dynamic-content": "true",
+                    className: "rounded-2xl p-4",
+                    style: { background: "rgba(255,140,66,0.12)", border: "1px solid rgba(255,140,66,0.3)" },
+                    children: [
+                      /* @__PURE__ */ jsxDEV("p", { "data-source-location": "components/game/RunnerGameOver:42:12", "data-dynamic-content": "false", className: "text-white/40 text-xs font-body mb-1", children: "Ratinhos" }, void 0, false, {
+                        fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                        lineNumber: 61,
+                        columnNumber: 13
+                      }, this),
+                      /* @__PURE__ */ jsxDEV("p", { "data-source-location": "components/game/RunnerGameOver:43:12", "data-dynamic-content": "true", className: "text-3xl font-display", style: { color: "#ff8c42", textShadow: "0 0 12px #ff8c42" }, "data-collection-item-field": "score", "data-collection-item-id": __dataCollectionItemId, children: [
+                        "🐭 ",
+                        score
+                      ] }, void 0, true, {
+                        fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                        lineNumber: 62,
+                        columnNumber: 13
+                      }, this)
+                    ]
+                  },
+                  void 0,
+                  true,
+                  {
+                    fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                    lineNumber: 59,
+                    columnNumber: 11
+                  },
+                  this
+                ),
+                /* @__PURE__ */ jsxDEV(
+                  "div",
+                  {
+                    "data-source-location": "components/game/RunnerGameOver:47:10",
+                    "data-dynamic-content": "true",
+                    className: "rounded-2xl p-4",
+                    style: { background: "rgba(0,255,255,0.08)", border: "1px solid rgba(0,255,255,0.2)" },
+                    children: [
+                      /* @__PURE__ */ jsxDEV("p", { "data-source-location": "components/game/RunnerGameOver:49:12", "data-dynamic-content": "false", className: "text-white/40 text-xs font-body mb-1", children: "Distância" }, void 0, false, {
+                        fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                        lineNumber: 68,
+                        columnNumber: 13
+                      }, this),
+                      /* @__PURE__ */ jsxDEV("p", { "data-source-location": "components/game/RunnerGameOver:50:12", "data-dynamic-content": "true", className: "text-3xl font-display", style: { color: "#00ffff", textShadow: "0 0 12px #00ffff" }, "data-collection-item-field": "distance", "data-collection-item-id": __dataCollectionItemId, children: [
+                        distance,
+                        "m"
+                      ] }, void 0, true, {
+                        fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                        lineNumber: 69,
+                        columnNumber: 13
+                      }, this)
+                    ]
+                  },
+                  void 0,
+                  true,
+                  {
+                    fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                    lineNumber: 66,
+                    columnNumber: 11
+                  },
+                  this
+                )
+              ] }, void 0, true, {
+                fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                lineNumber: 58,
+                columnNumber: 9
+              }, this),
+              /* @__PURE__ */ jsxDEV("div", { "data-source-location": "components/game/RunnerGameOver:57:8", "data-dynamic-content": "true", className: "flex gap-3 w-full mt-1", children: [
+                /* @__PURE__ */ jsxDEV(
+                  motion.button,
+                  {
+                    "data-source-location": "components/game/RunnerGameOver:58:10",
+                    "data-dynamic-content": "true",
+                    onClick: onRestart,
+                    whileHover: { scale: 1.04 },
+                    whileTap: { scale: 0.97 },
+                    className: "flex-1 py-3 font-display rounded-2xl text-white text-lg",
+                    style: {
+                      background: "linear-gradient(135deg, #ff00aa, #aa00ff)",
+                      boxShadow: "0 0 20px rgba(170,0,255,0.4)",
+                      border: "1px solid rgba(255,255,255,0.2)"
+                    },
+                    children: "🔄 Jogar"
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                    lineNumber: 77,
+                    columnNumber: 11
+                  },
+                  this
+                ),
+                /* @__PURE__ */ jsxDEV(
+                  motion.button,
+                  {
+                    "data-source-location": "components/game/RunnerGameOver:68:10",
+                    "data-dynamic-content": "true",
+                    onClick: onMenu,
+                    whileHover: { scale: 1.04 },
+                    whileTap: { scale: 0.97 },
+                    className: "flex-1 py-3 font-display rounded-2xl text-white/80 text-lg",
+                    style: { background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.15)" },
+                    children: "🏠 Menu"
+                  },
+                  void 0,
+                  false,
+                  {
+                    fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                    lineNumber: 87,
+                    columnNumber: 11
+                  },
+                  this
+                )
+              ] }, void 0, true, {
+                fileName: "/app/src/components/game/RunnerGameOver.jsx",
+                lineNumber: 76,
+                columnNumber: 9
+              }, this)
+            ]
+          },
+          void 0,
+          true,
+          {
+            fileName: "/app/src/components/game/RunnerGameOver.jsx",
+            lineNumber: 33,
+            columnNumber: 7
+          },
+          this
+        )
+      ]
+    },
+    void 0,
+    true,
+    {
+      fileName: "/app/src/components/game/RunnerGameOver.jsx",
+      lineNumber: 25,
+      columnNumber: 5
+    },
+    this
+  );
+}
+_c = RunnerGameOver;
+var _c;
+$RefreshReg$(_c, "RunnerGameOver");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("/app/src/components/game/RunnerGameOver.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("/app/src/components/game/RunnerGameOver.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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bWVzIjpbIlJlYWN0IiwibW90aW9uIiwiUnVubmVyR2FtZU92ZXIiLCJzY29yZSIsImRpc3RhbmNlIiwiaXNOZXdSZWNvcmQiLCJpc05ld0Rpc3RhbmNlIiwib25SZXN0YXJ0Iiwib25NZW51IiwiX19kYXRhQ29sbGVjdGlvbkl0ZW1JZCIsImJhY2tncm91bmQiLCJmaWx0ZXIiLCJvcGFjaXR5Iiwic2NhbGUiLCJ5IiwidHlwZSIsInN0aWZmbmVzcyIsImRhbXBpbmciLCJyb3RhdGUiLCJyZXBlYXQiLCJJbmZpbml0eSIsImR1cmF0aW9uIiwiY29sb3IiLCJ0ZXh0U2hhZG93IiwiYm9yZGVyIiwiYm94U2hhZG93IiwiX2MiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZXMiOlsiUnVubmVyR2FtZU92ZXIuanN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCB7IG1vdGlvbiB9IGZyb20gXCJmcmFtZXItbW90aW9uXCI7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFJ1bm5lckdhbWVPdmVyKHsgc2NvcmUsIGRpc3RhbmNlLCBpc05ld1JlY29yZCwgaXNOZXdEaXN0YW5jZSwgb25SZXN0YXJ0LCBvbk1lbnUsIFwiZGF0YS1jb2xsZWN0aW9uLWl0ZW0taWRcIjogX19kYXRhQ29sbGVjdGlvbkl0ZW1JZCB9KSB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBkYXRhLXNvdXJjZS1sb2NhdGlvbj1cImNvbXBvbmVudHMvZ2FtZS9SdW5uZXJHYW1lT3Zlcjo2OjRcIiBkYXRhLWR5bmFtaWMtY29udGVudD1cInRydWVcIiBjbGFzc05hbWU9XCJtaW4taC1zY3JlZW4gZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXJcIlxuICAgIHN0eWxlPXt7IGJhY2tncm91bmQ6IFwibGluZWFyLWdyYWRpZW50KDE2MGRlZywgIzBhMGExYSwgIzFhMDUyMCwgIzBhMGExYSlcIiB9fSBkYXRhLWNvbGxlY3Rpb24taXRlbS1pZD17X19kYXRhQ29sbGVjdGlvbkl0ZW1JZH0+XG5cbiAgICAgIDxkaXYgZGF0YS1zb3VyY2UtbG9jYXRpb249XCJjb21wb25lbnRzL2dhbWUvUnVubmVyR2FtZU92ZXI6OTo2XCIgZGF0YS1keW5hbWljLWNvbnRlbnQ9XCJ0cnVlXCIgY2xhc3NOYW1lPVwiYWJzb2x1dGUgaW5zZXQtMCBwb2ludGVyLWV2ZW50cy1ub25lIG92ZXJmbG93LWhpZGRlblwiPlxuICAgICAgICA8ZGl2IGRhdGEtc291cmNlLWxvY2F0aW9uPVwiY29tcG9uZW50cy9nYW1lL1J1bm5lckdhbWVPdmVyOjEwOjhcIiBkYXRhLWR5bmFtaWMtY29udGVudD1cInRydWVcIiBjbGFzc05hbWU9XCJhYnNvbHV0ZSB0b3AtMS8zIGxlZnQtMS8yIC10cmFuc2xhdGUteC0xLzIgdy04MCBoLTgwIHJvdW5kZWQtZnVsbCBvcGFjaXR5LTE1XCJcbiAgICAgICAgc3R5bGU9e3sgYmFja2dyb3VuZDogXCJyYWRpYWwtZ3JhZGllbnQoY2lyY2xlLCAjZmYwMGZmLCB0cmFuc3BhcmVudClcIiwgZmlsdGVyOiBcImJsdXIoNjBweClcIiB9fSAvPlxuICAgICAgPC9kaXY+XG5cbiAgICAgIDxtb3Rpb24uZGl2IGRhdGEtc291cmNlLWxvY2F0aW9uPVwiY29tcG9uZW50cy9nYW1lL1J1bm5lckdhbWVPdmVyOjE0OjZcIiBkYXRhLWR5bmFtaWMtY29udGVudD1cInRydWVcIlxuICAgICAgaW5pdGlhbD17eyBvcGFjaXR5OiAwLCBzY2FsZTogMC43LCB5OiA0MCB9fVxuICAgICAgYW5pbWF0ZT17eyBvcGFjaXR5OiAxLCBzY2FsZTogMSwgeTogMCB9fVxuICAgICAgdHJhbnNpdGlvbj17eyB0eXBlOiBcInNwcmluZ1wiLCBzdGlmZm5lc3M6IDI1MCwgZGFtcGluZzogMjIgfX1cbiAgICAgIGNsYXNzTmFtZT1cInJlbGF0aXZlIGZsZXggZmxleC1jb2wgaXRlbXMtY2VudGVyIHRleHQtY2VudGVyIGdhcC01IHB5LTggcHgtNiB3LWZ1bGwgbWF4LXctc20gbXgtYXV0byB6LTEwXCI+XG5cbiAgICAgICAgPG1vdGlvbi5kaXYgZGF0YS1zb3VyY2UtbG9jYXRpb249XCJjb21wb25lbnRzL2dhbWUvUnVubmVyR2FtZU92ZXI6MjA6OFwiIGRhdGEtZHluYW1pYy1jb250ZW50PVwidHJ1ZVwiXG4gICAgICAgIGFuaW1hdGU9e2lzTmV3UmVjb3JkID8geyByb3RhdGU6IFswLCAtMTUsIDE1LCAtMTUsIDBdLCBzY2FsZTogWzEsIDEuMSwgMV0gfSA6IHsgeTogWzAsIC04LCAwXSB9fVxuICAgICAgICB0cmFuc2l0aW9uPXt7IHJlcGVhdDogSW5maW5pdHksIGR1cmF0aW9uOiBpc05ld1JlY29yZCA/IDEuNSA6IDIgfX1cbiAgICAgICAgY2xhc3NOYW1lPVwidGV4dC03eGxcIlxuICAgICAgICBzdHlsZT17eyBmaWx0ZXI6IGlzTmV3UmVjb3JkID8gXCJkcm9wLXNoYWRvdygwIDAgMjBweCAjZmZkNzAwKVwiIDogXCJkcm9wLXNoYWRvdygwIDAgMTBweCAjZmY0NDAwKVwiIH19PlxuICAgICAgICAgIHtpc05ld1JlY29yZCA/IFwi8J+PhlwiIDogXCLwn5KlXCJ9XG4gICAgICAgIDwvbW90aW9uLmRpdj5cblxuICAgICAgICA8ZGl2IGRhdGEtc291cmNlLWxvY2F0aW9uPVwiY29tcG9uZW50cy9nYW1lL1J1bm5lckdhbWVPdmVyOjI4OjhcIiBkYXRhLWR5bmFtaWMtY29udGVudD1cInRydWVcIj5cbiAgICAgICAgICA8aDIgZGF0YS1zb3VyY2UtbG9jYXRpb249XCJjb21wb25lbnRzL2dhbWUvUnVubmVyR2FtZU92ZXI6Mjk6MTBcIiBkYXRhLWR5bmFtaWMtY29udGVudD1cInRydWVcIiBjbGFzc05hbWU9XCJ0ZXh0LTR4bCBmb250LWRpc3BsYXlcIlxuICAgICAgICAgIHN0eWxlPXt7IGNvbG9yOiBpc05ld1JlY29yZCA/IFwiI2ZmZDcwMFwiIDogXCIjZmZmXCIsIHRleHRTaGFkb3c6IGlzTmV3UmVjb3JkID8gXCIwIDAgMjBweCAjZmZkNzAwXCIgOiBcIjAgMCAxNXB4ICNmZjAwZmZcIiB9fT5cbiAgICAgICAgICAgIHtpc05ld1JlY29yZCA/IFwiTm92byBSZWNvcmRlIVwiIDogXCJHYW1lIE92ZXIhXCJ9XG4gICAgICAgICAgPC9oMj5cbiAgICAgICAgICB7aXNOZXdSZWNvcmQgJiZcbiAgICAgICAgICA8cCBkYXRhLXNvdXJjZS1sb2NhdGlvbj1cImNvbXBvbmVudHMvZ2FtZS9SdW5uZXJHYW1lT3ZlcjozNDoxMlwiIGRhdGEtZHluYW1pYy1jb250ZW50PVwiZmFsc2VcIiBjbGFzc05hbWU9XCJ0ZXh0LXllbGxvdy00MDAvODAgZm9udC1ib2R5IG10LTEgdGV4dC1zbVwiPkluY3LDrXZlbCEgVm9jw6ogYmF0ZXUgbyByZWNvcmRlITwvcD5cbiAgICAgICAgICB9XG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIHsvKiBTdGF0cyAqL31cbiAgICAgICAgPGRpdiBkYXRhLXNvdXJjZS1sb2NhdGlvbj1cImNvbXBvbmVudHMvZ2FtZS9SdW5uZXJHYW1lT3ZlcjozOTo4XCIgZGF0YS1keW5hbWljLWNvbnRlbnQ9XCJ0cnVlXCIgY2xhc3NOYW1lPVwiZ3JpZCBncmlkLWNvbHMtMiBnYXAtMyB3LWZ1bGxcIj5cbiAgICAgICAgICA8ZGl2IGRhdGEtc291cmNlLWxvY2F0aW9uPVwiY29tcG9uZW50cy9nYW1lL1J1bm5lckdhbWVPdmVyOjQwOjEwXCIgZGF0YS1keW5hbWljLWNvbnRlbnQ9XCJ0cnVlXCIgY2xhc3NOYW1lPVwicm91bmRlZC0yeGwgcC00XCJcbiAgICAgICAgICBzdHlsZT17eyBiYWNrZ3JvdW5kOiBcInJnYmEoMjU1LDE0MCw2NiwwLjEyKVwiLCBib3JkZXI6IFwiMXB4IHNvbGlkIHJnYmEoMjU1LDE0MCw2NiwwLjMpXCIgfX0+XG4gICAgICAgICAgICA8cCBkYXRhLXNvdXJjZS1sb2NhdGlvbj1cImNvbXBvbmVudHMvZ2FtZS9SdW5uZXJHYW1lT3Zlcjo0MjoxMlwiIGRhdGEtZHluYW1pYy1jb250ZW50PVwiZmFsc2VcIiBjbGFzc05hbWU9XCJ0ZXh0LXdoaXRlLzQwIHRleHQteHMgZm9udC1ib2R5IG1iLTFcIj5SYXRpbmhvczwvcD5cbiAgICAgICAgICAgIDxwIGRhdGEtc291cmNlLWxvY2F0aW9uPVwiY29tcG9uZW50cy9nYW1lL1J1bm5lckdhbWVPdmVyOjQzOjEyXCIgZGF0YS1keW5hbWljLWNvbnRlbnQ9XCJ0cnVlXCIgY2xhc3NOYW1lPVwidGV4dC0zeGwgZm9udC1kaXNwbGF5XCIgc3R5bGU9e3sgY29sb3I6IFwiI2ZmOGM0MlwiLCB0ZXh0U2hhZG93OiBcIjAgMCAxMnB4ICNmZjhjNDJcIiB9fSBkYXRhLWNvbGxlY3Rpb24taXRlbS1maWVsZD1cInNjb3JlXCIgZGF0YS1jb2xsZWN0aW9uLWl0ZW0taWQ9e19fZGF0YUNvbGxlY3Rpb25JdGVtSWR9PlxuICAgICAgICAgICAgICDwn5CtIHtzY29yZX1cbiAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8ZGl2IGRhdGEtc291cmNlLWxvY2F0aW9uPVwiY29tcG9uZW50cy9nYW1lL1J1bm5lckdhbWVPdmVyOjQ3OjEwXCIgZGF0YS1keW5hbWljLWNvbnRlbnQ9XCJ0cnVlXCIgY2xhc3NOYW1lPVwicm91bmRlZC0yeGwgcC00XCJcbiAgICAgICAgICBzdHlsZT17eyBiYWNrZ3JvdW5kOiBcInJnYmEoMCwyNTUsMjU1LDAuMDgpXCIsIGJvcmRlcjogXCIxcHggc29saWQgcmdiYSgwLDI1NSwyNTUsMC4yKVwiIH19PlxuICAgICAgICAgICAgPHAgZGF0YS1zb3VyY2UtbG9jYXRpb249XCJjb21wb25lbnRzL2dhbWUvUnVubmVyR2FtZU92ZXI6NDk6MTJcIiBkYXRhLWR5bmFtaWMtY29udGVudD1cImZhbHNlXCIgY2xhc3NOYW1lPVwidGV4dC13aGl0ZS80MCB0ZXh0LXhzIGZvbnQtYm9keSBtYi0xXCI+RGlzdMOibmNpYTwvcD5cbiAgICAgICAgICAgIDxwIGRhdGEtc291cmNlLWxvY2F0aW9uPVwiY29tcG9uZW50cy9nYW1lL1J1bm5lckdhbWVPdmVyOjUwOjEyXCIgZGF0YS1keW5hbWljLWNvbnRlbnQ9XCJ0cnVlXCIgY2xhc3NOYW1lPVwidGV4dC0zeGwgZm9udC1kaXNwbGF5XCIgc3R5bGU9e3sgY29sb3I6IFwiIzAwZmZmZlwiLCB0ZXh0U2hhZG93OiBcIjAgMCAxMnB4ICMwMGZmZmZcIiB9fSBkYXRhLWNvbGxlY3Rpb24taXRlbS1maWVsZD1cImRpc3RhbmNlXCIgZGF0YS1jb2xsZWN0aW9uLWl0ZW0taWQ9e19fZGF0YUNvbGxlY3Rpb25JdGVtSWR9PlxuICAgICAgICAgICAgICB7ZGlzdGFuY2V9bVxuICAgICAgICAgICAgPC9wPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cblxuICAgICAgICB7LyogQnV0dG9ucyAqL31cbiAgICAgICAgPGRpdiBkYXRhLXNvdXJjZS1sb2NhdGlvbj1cImNvbXBvbmVudHMvZ2FtZS9SdW5uZXJHYW1lT3Zlcjo1Nzo4XCIgZGF0YS1keW5hbWljLWNvbnRlbnQ9XCJ0cnVlXCIgY2xhc3NOYW1lPVwiZmxleCBnYXAtMyB3LWZ1bGwgbXQtMVwiPlxuICAgICAgICAgIDxtb3Rpb24uYnV0dG9uIGRhdGEtc291cmNlLWxvY2F0aW9uPVwiY29tcG9uZW50cy9nYW1lL1J1bm5lckdhbWVPdmVyOjU4OjEwXCIgZGF0YS1keW5hbWljLWNvbnRlbnQ9XCJ0cnVlXCIgb25DbGljaz17b25SZXN0YXJ0fVxuICAgICAgICAgIHdoaWxlSG92ZXI9e3sgc2NhbGU6IDEuMDQgfX0gd2hpbGVUYXA9e3sgc2NhbGU6IDAuOTcgfX1cbiAgICAgICAgICBjbGFzc05hbWU9XCJmbGV4LTEgcHktMyBmb250LWRpc3BsYXkgcm91bmRlZC0yeGwgdGV4dC13aGl0ZSB0ZXh0LWxnXCJcbiAgICAgICAgICBzdHlsZT17e1xuICAgICAgICAgICAgYmFja2dyb3VuZDogXCJsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjZmYwMGFhLCAjYWEwMGZmKVwiLFxuICAgICAgICAgICAgYm94U2hhZG93OiBcIjAgMCAyMHB4IHJnYmEoMTcwLDAsMjU1LDAuNClcIixcbiAgICAgICAgICAgIGJvcmRlcjogXCIxcHggc29saWQgcmdiYSgyNTUsMjU1LDI1NSwwLjIpXCJcbiAgICAgICAgICB9fT5cbiAgICAgICAgICAgIPCflIQgSm9nYXJcbiAgICAgICAgICA8L21vdGlvbi5idXR0b24+XG4gICAgICAgICAgPG1vdGlvbi5idXR0b24gZGF0YS1zb3VyY2UtbG9jYXRpb249XCJjb21wb25lbnRzL2dhbWUvUnVubmVyR2FtZU92ZXI6Njg6MTBcIiBkYXRhLWR5bmFtaWMtY29udGVudD1cInRydWVcIiBvbkNsaWNrPXtvbk1lbnV9XG4gICAgICAgICAgd2hpbGVIb3Zlcj17eyBzY2FsZTogMS4wNCB9fSB3aGlsZVRhcD17eyBzY2FsZTogMC45NyB9fVxuICAgICAgICAgIGNsYXNzTmFtZT1cImZsZXgtMSBweS0zIGZvbnQtZGlzcGxheSByb3VuZGVkLTJ4bCB0ZXh0LXdoaXRlLzgwIHRleHQtbGdcIlxuICAgICAgICAgIHN0eWxlPXt7IGJhY2tncm91bmQ6IFwicmdiYSgyNTUsMjU1LDI1NSwwLjA2KVwiLCBib3JkZXI6IFwiMXB4IHNvbGlkIHJnYmEoMjU1LDI1NSwyNTUsMC4xNSlcIiB9fT5cbiAgICAgICAgICAgIPCfj6AgTWVudVxuICAgICAgICAgIDwvbW90aW9uLmJ1dHRvbj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L21vdGlvbi5kaXY+XG4gICAgPC9kaXY+KTtcblxufSJdLCJmaWxlIjoiL2FwcC9zcmMvY29tcG9uZW50cy9nYW1lL1J1bm5lckdhbWVPdmVyLmpzeCJ9
